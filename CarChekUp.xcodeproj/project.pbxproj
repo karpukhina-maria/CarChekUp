@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		A59068C627176293001273A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59068C527176293001273A0 /* AppDelegate.swift */; };
 		A59068C827176293001273A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59068C727176293001273A0 /* SceneDelegate.swift */; };
-		A59068CA27176293001273A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59068C927176293001273A0 /* ViewController.swift */; };
 		A59068CD27176293001273A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59068CB27176293001273A0 /* Main.storyboard */; };
 		A59068CF27176296001273A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59068CE27176296001273A0 /* Assets.xcassets */; };
 		A59068D227176296001273A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59068D027176296001273A0 /* LaunchScreen.storyboard */; };
+		A59068DF271764FA001273A0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A59068DE271764FA001273A0 /* .gitignore */; };
+		A59068E227176633001273A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59068E127176633001273A0 /* ViewController.swift */; };
+		A59068E427176654001273A0 /* Auto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59068E327176654001273A0 /* Auto.swift */; };
+		A59068E627176667001273A0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59068E527176667001273A0 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A59068C227176293001273A0 /* CarChekUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarChekUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59068C527176293001273A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A59068C727176293001273A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A59068C927176293001273A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A59068CC27176293001273A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A59068CE27176296001273A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A59068D127176296001273A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A59068D327176296001273A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59068DE271764FA001273A0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A59068E127176633001273A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A59068E327176654001273A0 /* Auto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auto.swift; sourceTree = "<group>"; };
+		A59068E527176667001273A0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 		A59068B927176293001273A0 = {
 			isa = PBXGroup;
 			children = (
+				A59068DE271764FA001273A0 /* .gitignore */,
 				A59068C427176293001273A0 /* CarChekUp */,
 				A59068C327176293001273A0 /* Products */,
 			);
@@ -56,15 +63,65 @@
 		A59068C427176293001273A0 /* CarChekUp */ = {
 			isa = PBXGroup;
 			children = (
-				A59068C527176293001273A0 /* AppDelegate.swift */,
-				A59068C727176293001273A0 /* SceneDelegate.swift */,
-				A59068C927176293001273A0 /* ViewController.swift */,
-				A59068CB27176293001273A0 /* Main.storyboard */,
-				A59068CE27176296001273A0 /* Assets.xcassets */,
-				A59068D027176296001273A0 /* LaunchScreen.storyboard */,
-				A59068D327176296001273A0 /* Info.plist */,
+				A59068DA27176339001273A0 /* ViewControllers */,
+				A59068E027176586001273A0 /* Models */,
+				A59068DC27176369001273A0 /* Services */,
+				A59068DB27176352001273A0 /* Storyboards */,
+				A59068D927176330001273A0 /* App */,
+				A59068DD2717638D001273A0 /* Resourses */,
 			);
 			path = CarChekUp;
+			sourceTree = "<group>";
+		};
+		A59068D927176330001273A0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A59068C527176293001273A0 /* AppDelegate.swift */,
+				A59068C727176293001273A0 /* SceneDelegate.swift */,
+				A59068D327176296001273A0 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A59068DA27176339001273A0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A59068E127176633001273A0 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A59068DB27176352001273A0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A59068D027176296001273A0 /* LaunchScreen.storyboard */,
+				A59068CB27176293001273A0 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A59068DC27176369001273A0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A59068E527176667001273A0 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A59068DD2717638D001273A0 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				A59068CE27176296001273A0 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		A59068E027176586001273A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A59068E327176654001273A0 /* Auto.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59068DF271764FA001273A0 /* .gitignore in Resources */,
 				A59068D227176296001273A0 /* LaunchScreen.storyboard in Resources */,
 				A59068CF27176296001273A0 /* Assets.xcassets in Resources */,
 				A59068CD27176293001273A0 /* Main.storyboard in Resources */,
@@ -138,9 +196,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A59068CA27176293001273A0 /* ViewController.swift in Sources */,
 				A59068C627176293001273A0 /* AppDelegate.swift in Sources */,
+				A59068E627176667001273A0 /* DataManager.swift in Sources */,
 				A59068C827176293001273A0 /* SceneDelegate.swift in Sources */,
+				A59068E427176654001273A0 /* Auto.swift in Sources */,
+				A59068E227176633001273A0 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,12 +351,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K242QA4C2Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CarChekUp/Info.plist;
+				INFOPLIST_FILE = CarChekUp/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Car ChekUp Info";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +369,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,12 +382,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K242QA4C2Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CarChekUp/Info.plist;
+				INFOPLIST_FILE = CarChekUp/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Car ChekUp Info";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +400,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
